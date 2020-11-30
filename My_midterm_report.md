@@ -20,7 +20,7 @@
 ## Describe 
 * 程式碼參考鍾誠老師gitlab上之程式碼 了解程式碼並部分改寫
 * 使用工具及環境: VScode, nodejs(ver: 6.14.4)
-* 收尋網站: http://news.baidu.com/
+* 收尋網站: [百度新聞](http://news.baidu.com/)
 ## Code
 ```
  
