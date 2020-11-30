@@ -37,4 +37,4 @@
 ## Reference
 * [程式前沿/分分鐘鐘教你用node.js寫個爬蟲](https://codertw.com/ios/20272/#outline__1)
 * [鍾誠老師的gitlab](https://gitlab.com/ccckmit/course/-/wikis/%E9%99%B3%E9%8D%BE%E8%AA%A0/%E6%9B%B8%E7%B1%8D/%E7%B6%B2%E7%AB%99%E8%A8%AD%E8%A8%88/httpCrawler)
-* [IT邦幫忙 作者:circleuniv](https://ithelp.ithome.com.tw/articles/10185302)
+* [IT邦幫忙 Node.JS - 30 天入門學習筆記系列 作者:circleuniv](https://ithelp.ithome.com.tw/articles/10185302)
