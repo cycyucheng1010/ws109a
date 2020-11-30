@@ -22,7 +22,7 @@
 * 步驟:
 1. 安裝套件: npm install URIjs
 2. 撰寫程式碼
-3. 執行方法： node crawler 'webpage'
+3. 執行方法： node crawler "webpage"
 
 ## Code
 ```
