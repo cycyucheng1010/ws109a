@@ -26,10 +26,15 @@
 
 ## Code
 ```
-
+ 
 ```
 ## Additional
+* 使用工具: VScode, nodejs(ver: 6.14.4)
+* fs：它包含檔案的存取／操作的一些類別，方法及事件。
+* http：它包含可以用來建立http server 的一些類別, 方法, 及事件。 
+* url：它包含可以解析url的一些方法。
+*
 ## Reference
 * [程式前沿/分分鐘鐘教你用node.js寫個爬蟲](https://codertw.com/ios/20272/#outline__1)
 * [鍾誠老師的gitlab](https://gitlab.com/ccckmit/course/-/wikis/%E9%99%B3%E9%8D%BE%E8%AA%A0/%E6%9B%B8%E7%B1%8D/%E7%B6%B2%E7%AB%99%E8%A8%AD%E8%A8%88/httpCrawler)
-* [web scraping with NodeJS ...Hitesh Choudhary](https://www.youtube.com/watch?v=BqGq9MTSt7g)
+* [IT邦幫忙 作者:circleuniv](https://ithelp.ithome.com.tw/articles/10185302)
