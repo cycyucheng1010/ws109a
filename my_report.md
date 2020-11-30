@@ -18,7 +18,7 @@
 ------->Deep Web 爬蟲爬行過程中最重要部分就是表單填寫，包含兩種型別：基於領域知識的表單填寫、基於網頁結構分析的表單填寫
 
 ## Describe and Step
-* 程式碼參考鍾誠老師gitlab上之程式碼 了解程式碼
+* 程式碼參考鍾誠老師gitlab上之程式碼 了解程式碼並部分改寫
 * 步驟:
 1. 安裝套件: npm install URIjs
 2. 撰寫程式碼
@@ -33,3 +33,4 @@
 ## Reference
 * [程式前沿/分分鐘鐘教你用node.js寫個爬蟲](https://codertw.com/ios/20272/#outline__1)
 * [鍾誠老師的gitlab](https://gitlab.com/ccckmit/course/-/wikis/%E9%99%B3%E9%8D%BE%E8%AA%A0/%E6%9B%B8%E7%B1%8D/%E7%B6%B2%E7%AB%99%E8%A8%AD%E8%A8%88/httpCrawler)
+* [web scraping with NodeJS ...Hitesh Choudhary](https://www.youtube.com/watch?v=BqGq9MTSt7g)
