@@ -1,7 +1,7 @@
 ## address
 172.104.122.100
 ## login step
-1. ssh @root172.104.122.100
+1. ssh root@172.104.122.100
 2. enter password
 3. login success
 ## command
