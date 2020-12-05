@@ -5,6 +5,7 @@
 2. enter password
 3. login success
 ## command
+* ```sudo```superuser超級使用者(權限)
 * ```cd``` 這是用來變換工作路徑的指令。
 * ```pwd```:如果你想要知道目前所在的目錄。
 * ```ls --color``` 以彩色顯示檔案資料。
