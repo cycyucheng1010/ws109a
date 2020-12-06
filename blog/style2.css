@@ -1,0 +1,127 @@
+ body {
+    background-color:rgb(29, 29, 29);
+    margin: 0;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    z-index: 10;
+  }
+
+  #box2 {
+    background-color: #333;
+    display: block;
+    text-align: center;
+  }
+
+  #box2 a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 40px 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  #box2 a:hover {
+    opacity: 0.7;
+  }
+
+  .special {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 40px 15px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto 10% auto;
+    border: 1px solid #888;
+    width: 25%; 
+    position: relative;
+    z-index: 9;
+  }
+  
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 10;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  
+  #topbar {
+    z-index: 10;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+  }
+  
+  #topbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #topbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .icon{
+    z-index: 10;
+    left: atuo;
+    float: left;
+    right: 0;
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .icon > a {
+    display: block;
+    text-decoration: none; 
+    padding:15px;
+    transition: all 0.1s ease;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .icon a:hover {
+    opacity: 0.7;
+  }
+  
+  button {
+    top: 50%;
+  }
