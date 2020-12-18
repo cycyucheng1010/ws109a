@@ -4,8 +4,11 @@
 1. ```ssh root@172.104.122.100```
 2. enter password
 3. login success
-## install git
-* ```$ sudo apt-get install git-all```
+## installation part
+* ```$ sudo apt-get install git-all ```
+* ```sudo apt-get install unzip -y  ```
+* ``` curl -fsSL https://deno.land/x/install/install.sh | sh ```
+* 
 ## command
 * ```sudo```superuser超級使用者(權限)
 * ```cd``` 這是用來變換工作路徑的指令。
