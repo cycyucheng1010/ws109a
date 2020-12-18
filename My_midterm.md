@@ -90,7 +90,7 @@ function urlToFileName(url) {
   return url.replace(/[^\w]/gi, '_');
 }
 ```
-## result
+## Result
 * [resulturl.json](https://github.com/cycyucheng1010/ws109a/blob/master/resulturl.json)
 * 備註: 爬取5秒鐘的結果
 ## Additional
