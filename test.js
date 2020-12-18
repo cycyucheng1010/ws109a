@@ -1,36 +1,67 @@
-const request = require("request");
-const cheerio = require("cheerio");
-const fs = require("fs");
+const ok = require('assert').ok
+const app = require('./app')
+const puppeteer = require('puppeteer')
+var browser, page1, page2
 
-const earthquake = function () {
-  request({
-    url: "http://www.cwb.gov.tw/V7/modules/MOD_EC_Home.htm", // 中央氣象局網頁
-    method: "GET"
-  }, function (error, response, body) {
-    if (error || !body) {
-      return;
-    }
-    const $ = cheerio.load(body); // 載入 body
-    const result = []; // 建立一個儲存結果的容器
-    const table_tr = $(".BoxTable tr"); // 爬最外層的 Table(class=BoxTable) 中的 tr
+const opts = {
+  // headless: false,
+  slowMo: 10,
+  timeout: 10000
+}
 
-    for (let i = 1; i < table_tr.length; i++) { // 走訪 tr
-      const table_td = table_tr.eq(i).find('td'); // 擷取每個欄位(td)
-      const time = table_td.eq(1).text(); // time (台灣時間)
-      const latitude = table_td.eq(2).text(); // latitude (緯度)
-      const longitude = table_td.eq(3).text(); // longitude (經度)
-      const amgnitude = table_td.eq(4).text(); // magnitude (規模)
-      const depth = table_td.eq(5).text(); // depth (深度)
-      const location = table_td.eq(6).text(); // location (位置)
-      const url = table_td.eq(7).text(); // url (網址)
-      // 建立物件並(push)存入結果
-      result.push(Object.assign({ time, latitude, longitude, amgnitude, depth, location, url }));
-    }
-    // 在終端機(console)列出結果
-    console.log(result);
-    // 寫入 result.json 檔案
-    fs.writeFileSync("result.json", JSON.stringify(result));
-  });
-};
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
-earthquake();
+describe('Socket.io 簡易聊天系統，使用 Puppeteer 測試', function() {
+  before (async function () {
+    browser = await puppeteer.launch(opts)
+    page1 = await browser.newPage()
+    page2 = await browser.newPage()
+  })
+  after(function() {
+    browser.close()
+    app.close()
+  })
+
+  describe('測試聊天訊息是否有同步更新', function() {
+    var cccMsg1 = 'Hello! I am ccc.'
+    var snoopyMsg1 = 'Hello! I am snoopy.'
+    it('兩位使用者 ccc 與 snoopy 進入聊天室', async function() {
+      await page1.goto('http://localhost:3000', {waitUntil: 'domcontentloaded'})
+      await page2.goto('http://localhost:3000', {waitUntil: 'domcontentloaded'})
+    })
+    it('ccc 填入姓名並發送 hello 訊息，確認是否雙方都看到該訊息！', async function() {
+      await page1.focus('#user')
+      await page1.keyboard.type('ccc')
+      await page1.focus('#msg')
+      await page1.keyboard.type(cccMsg1)
+      await sleep(500)
+      await page1.click('#send')
+
+      await sleep(500)
+      
+      let html1 = await page1.content()
+      ok(html1.indexOf(cccMsg1) >= 0)
+      
+      let html2 = await page2.content()
+      ok(html2.indexOf(cccMsg1) >= 0)
+    })
+    it('snoopy 填入姓名並發送 hello 訊息，確認是否雙方都看到該訊息！', async function() {
+      await page2.focus('#user')
+      await page2.keyboard.type('snoopy')
+      await page2.focus('#msg')
+      await page2.keyboard.type(snoopyMsg1)
+      await sleep(500)
+      await page2.click('#send')
+
+      await sleep(500)
+
+      let html1 = await page1.content()
+      ok(html1.indexOf(snoopyMsg1) >= 0)
+      
+      let html2 = await page2.content()
+      ok(html2.indexOf(snoopyMsg1) >= 0)
+    })
+  })
+})
