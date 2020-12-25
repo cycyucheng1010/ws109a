@@ -11,6 +11,7 @@
 * ``` curl -fsSL https://deno.land/x/install/install.sh | sh ```
 * ```apt-get install nodejs```
 * ```sudo apt-get install npm```
+* ```nano ~/.bashrc```
 ## command
 * ```sudo```superuser超級使用者(權限)
 * ```cd``` 這是用來變換工作路徑的指令。
@@ -24,9 +25,7 @@
 * ```shutdown``` Linux 用來關機的指令。
 * ```reboot``` 重新開機的指令。
 * ```curl```在linux中curl是一個利用URL規則在命令列下工作的檔案傳輸工具,可以說是一款很強大的http命令列工具。它支援檔案的上傳和下載,是綜合傳輸工具,但按傳統,習慣稱url為下載工具。
-
-
-# 
+* ```clear```清除命令提示字元之文字
 ## vi
 * ex: vi test.dat
 ### 編輯模式：
