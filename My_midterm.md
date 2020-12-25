@@ -9,7 +9,7 @@
 * 收尋網站: [百度新聞](http://news.baidu.com/)
 * 找到之連結會存於resulturl.json裡面
 ## Code
-* [crawler.js](https://github.com/cycyucheng1010/ws109a/blob/master/crawler.js)
+* [crawler.js](https://github.com/cycyucheng1010/ws109a/blob/master/crawler/crawler.js)
 ```
  // 安裝套件： npm install URIjs
 // 執行方法： node crawler http://news.baidu.com/
@@ -91,7 +91,7 @@ function urlToFileName(url) {
 }
 ```
 ## Result
-* [resulturl.json](https://github.com/cycyucheng1010/ws109a/blob/master/resulturl.json)
+* [resulturl.json](https://github.com/cycyucheng1010/ws109a/blob/master/crawler/resulturl.json)
 * 備註: 爬取5秒鐘的結果
 ## Additional
 * fs：它包含檔案的存取／操作的一些類別，方法及事件。
