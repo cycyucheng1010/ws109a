@@ -9,6 +9,8 @@
 * ```sudo apt-get install unzip -y  ```
 * ```sudo apt-get install curl ```
 * ``` curl -fsSL https://deno.land/x/install/install.sh | sh ```
+* ```apt-get install nodejs```
+* ```sudo apt-get install npm```
 ## command
 * ```sudo```superuser超級使用者(權限)
 * ```cd``` 這是用來變換工作路徑的指令。
