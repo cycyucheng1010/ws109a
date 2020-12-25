@@ -92,9 +92,9 @@ function urlToFileName(url) {
 ```
 ## Result
 * [resulturl.json](https://github.com/cycyucheng1010/ws109a/blob/master/crawler/resulturl.json)
-* 備註: 爬取5秒鐘的結果
 ![1.png](https://github.com/cycyucheng1010/ws109a/blob/master/crawler/1.PNG)
 ![2.png](https://github.com/cycyucheng1010/ws109a/blob/master/crawler/2.PNG)
+* 備註: 爬取5秒鐘的結果
 ## Additional
 * fs：它包含檔案的存取／操作的一些類別，方法及事件。
 * http：它包含可以用來建立http server 的一些類別, 方法, 及事件。 
