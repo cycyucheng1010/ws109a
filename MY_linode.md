@@ -7,8 +7,8 @@
 ## installation part
 * ```$ sudo apt-get install git-all ```
 * ```sudo apt-get install unzip -y  ```
+* ```sudo apt-get install curl ```
 * ``` curl -fsSL https://deno.land/x/install/install.sh | sh ```
-* 
 ## command
 * ```sudo```superuser超級使用者(權限)
 * ```cd``` 這是用來變換工作路徑的指令。
@@ -21,6 +21,10 @@
 * ```exit``` login out 的意思。
 * ```shutdown``` Linux 用來關機的指令。
 * ```reboot``` 重新開機的指令。
+* ```curl```在linux中curl是一個利用URL規則在命令列下工作的檔案傳輸工具,可以說是一款很強大的http命令列工具。它支援檔案的上傳和下載,是綜合傳輸工具,但按傳統,習慣稱url為下載工具。
+
+
+# 
 ## vi
 * ex: vi test.dat
 ### 編輯模式：
@@ -30,6 +34,7 @@
 * ```r``` (取代：會取代游標所在的那一個字元)
 * ```R``` (全部取代：會一直取代游標所在的文字，直到按下 ESC 為止)
 * ```:wq``` (存檔並離開的指令很簡單)
+* esc 回到原本狀態
 ### 游標移動指令:
 * ```k```  或向上鍵 (向上移一個字元)
 * ```j```  或向下鍵 (向下移一個字元)
