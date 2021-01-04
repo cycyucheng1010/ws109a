@@ -5,13 +5,13 @@
 2. enter password
 3. login success
 ## installation part
-* ```$ sudo apt-get install git-all ```
-* ```sudo apt-get install unzip -y  ```
-* ```sudo apt-get install curl ```
-* ``` curl -fsSL https://deno.land/x/install/install.sh | sh ```
-* ```apt-get install nodejs```
-* ```sudo apt-get install npm```
-* ```nano ~/.bashrc```
+* ```$ sudo apt-get install git-all ``` git安裝
+* ```sudo apt-get install unzip -y  ```解壓縮程式安裝
+* ```sudo apt-get install curl ```安裝下載器
+* ``` curl -fsSL https://deno.land/x/install/install.sh | sh ```安裝deno
+* ```apt-get install nodejs```安裝nodejs
+* ```sudo apt-get install npm```安裝npm
+* ```nano ~/.bashrc```調整設定指令集
 ## command
 * ```sudo```superuser超級使用者(權限)
 * ```cd``` 這是用來變換工作路徑的指令。
