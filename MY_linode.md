@@ -30,24 +30,17 @@
 * ```curl```在linux中curl是一個利用URL規則在命令列下工作的檔案傳輸工具,可以說是一款很強大的http命令列工具。它支援檔案的上傳和下載,是綜合傳輸工具,但按傳統,習慣稱url為下載工具。
 * ```clear```清除命令提示字元之文字
 ### elasticsearch 
-  234  vim ~/.bashrc
-  235  source ~/.bashrc
-  236  ls
-  237  ls -a
-  238  java
-  239  javac
-  240  echo $JAVA_HOME
-  241  sudo apt update
-  242  sudo apt install oracle-java8-installer
-  243  sudo apt install default-jre
-  244  sudo apt install default-jdk
-  245  sudo apt install oracle-java8-installer
-  246  javac
-  247  wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
-  248  sudo apt-get install apt-transport-https
-  249  sudo apt-get update && sudo apt-get install elasticsearch
-  250  sudo -i service elasticsearch start
-  251  curl localhost:9200
+  1.  sudo apt update
+  2.  sudo apt install oracle-java8-installer
+  3.  sudo apt install default-jre
+  4.  sudo apt install default-jdk
+  5.  sudo apt install oracle-java8-installer
+  6.  javac
+  7.  wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+  8.  sudo apt-get install apt-transport-https
+  9.  sudo apt-get update && sudo apt-get install elasticsearch
+  10.  sudo -i service elasticsearch start
+  11.  curl localhost:9200
 ## vi
 * ex: vi test.dat
 ### 編輯模式：
