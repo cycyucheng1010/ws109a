@@ -6,6 +6,21 @@
 * 它内置了 V8 引擎，用来解释 JavaScript。同时，也内置了 tsc 引擎，解释 TypeScript。它使用 Rust 语言开发。
 * Deno 只有一个可执行文件，所有操作都通过这个文件完成。它支持跨平台（Mac、Linux、Windows）。
 * 没有 npm，没有 npm_modules 目录，没有require()命令，也不需要package.json文件。
+## 常用指令
+* ```iwr https://deno.land/x/install/install.ps1 -useb | iex```安裝
+* ```deno -h```指令集
+* ```deno -V```version
+* ``` deno run --allow-net```允許網路
+* ``` deno run --allow-read```允許存取
+* ``` deno run -A```皆允許
+
+## 範例練習
+```
+$ deno
+Deno 1.0.0
+exit using ctrl+d or close()
+> 
+```
 ## 學習課程
 * [ccc109ws](https://gitlab.com/ccc109/ws/-/tree/master/deno)
 * [deno official](https://deno.land/)
