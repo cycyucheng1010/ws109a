@@ -1,4 +1,4 @@
-# 期末作業:Search Engine = deno + elasticsearch
+# 期末作業:Search Engine = Deno + Elasticsearch
 * [網頁連結](http://172.104.122.100:8000)
 ## 資料的收尋及筆記
 * [MY_linode](https://github.com/cycyucheng1010/ws109a/blob/master/MY_linode.md)
