@@ -5,8 +5,8 @@
 * [My_deno](https://github.com/cycyucheng1010/ws109a/blob/master/My_deno.md)
 ## 過程
 1. 利用爬蟲將網址爬取並存下
-2. 程式透過elasticsearch進行收尋
-3.完成收尋
+2. 程式透過elasticsearch進行搜尋
+3.完成搜尋
 ## 程式碼
 * [denocrawler.js](https://github.com/cycyucheng1010/ws109a/blob/master/final/denocrawler.js)
 ```
@@ -147,7 +147,7 @@ async function pub(ctx) {
   });
 }
 
-console.log('Server run at http://127.0.0.1:8000')
+console.log('Server run at http://172.104.122.100:8000')
 await app.listen({ port: 8000 });
 ```
 
@@ -159,5 +159,5 @@ await app.listen({ port: 8000 });
 * 程式碼參考鍾誠老師以及柯泓吉同學之程式碼，並使用在個人申請之linode後端上。
 * 感謝鍾誠老師這學期的教學，雖然目前對deno及後端的理解還十分有限，但相信透過這學期的認識以及後續的努力一定可以闖出一片天的!
 * 在學習的過程中主要遇到的問題有一下兩點: 首先是對deno的熟悉程度不足以及對linux系統的不理解，導致光安裝deno的環境就花了不少時間。
-* 使用deno爬蟲爬取資料後再搭配elasticsearch做收尋引擎。
+* 使用deno爬蟲爬取資料後再搭配elasticsearch做搜尋引擎。
 * 來源網址為維基百科。
