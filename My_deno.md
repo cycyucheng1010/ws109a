@@ -8,7 +8,7 @@
 * 没有 npm，没有 npm_modules 目录，没有require()命令，也不需要package.json文件。
 ## 學習課程
 * [ccc109ws](https://gitlab.com/ccc109/ws/-/tree/master/deno)
-
+* [deno official](https://deno.land/)
 ## 參考資料
 * [阮一峰的网络日志](https://www.ruanyifeng.com/blog/2020/01/deno-intro.html)
 * [鐘誠老師gitlab](https://gitlab.com/ccc109)
