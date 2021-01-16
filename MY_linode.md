@@ -27,6 +27,7 @@
   10.  sudo -i service elasticsearch start
   11.  curl localhost:9200
 ## command
+*``` &```Linux 允許把命令放到背景中執行，僅僅需要在命令的最後加上一個 &，就可以利用 Linux 的多工特性執行多個背景程式
 * ```vim ~/.bashrc```設定
 * ```sudo```superuser超級使用者(權限)
 * ```cd``` 這是用來變換工作路徑的指令。
