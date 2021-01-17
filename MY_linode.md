@@ -28,6 +28,7 @@
   11.  curl localhost:9200
 ## command
 * ``` &```Linux 允許把命令放到背景中執行，僅僅需要在命令的最後加上一個 &，就可以利用 Linux 的多工特性執行多個背景程式
+* ``` nohup```全寫是 “no hangup”, HUP hangup (HUP) 訊號會在使用者登出時, 系統向 process 發出, 通知 process 結束, 但透過 nohup 執行的指令, nohup 會將 HUP 訊息截取, 讓指令可以繼續執行。
 * ```vim ~/.bashrc```設定
 * ```sudo```superuser超級使用者(權限)
 * ```cd``` 這是用來變換工作路徑的指令。
