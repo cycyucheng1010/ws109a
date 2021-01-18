@@ -6,7 +6,7 @@
 ## 過程
 1. 利用爬蟲將網址爬取並存下
 2. 程式透過elasticsearch進行搜尋
-3.完成搜尋
+3. 完成搜尋
 ## 程式碼
 * [denocrawler.js](https://github.com/cycyucheng1010/ws109a/blob/master/final/denocrawler.js)
 ```
